@@ -51,11 +51,15 @@ html, body {
   color: var(--blue);
 }
 
-.is-active {
+/* :focus спрацює при кліку або виборі клавіатурою */
+.nav__link:focus {
   color: var(--blue);
+  /* Додаємо це, щоб прибрати стандартну рамку фокусу (outline) браузера,
+     оскільки у нас вже є свій індикатор фокусу (лінія знизу) */
+  outline: none;
 }
 
-.is-active::after {
+.nav__link:focus::after {
   content: "";
   position: absolute;
   bottom: 0;
