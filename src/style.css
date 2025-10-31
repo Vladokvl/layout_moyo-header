@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 :root {
@@ -12,7 +13,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
   padding: 0 50px;
   background: #fff;
 }
@@ -20,12 +20,10 @@ html, body {
 .logo img {
   width: 40px;
   height: 40px;
+  display: block;
 }
-.nav {
-  height: 100%;
-}
+
 .nav__list {
-  height: 100%;
   display: flex;
   list-style: none;
   margin: 0;
@@ -39,7 +37,7 @@ html, body {
 .nav__link {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 60px;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -47,19 +45,16 @@ html, body {
   color: #000;
   position: relative;
 }
+
 .nav__link:hover {
   color: var(--blue);
 }
 
-/* :focus спрацює при кліку або виборі клавіатурою */
-.nav__link:focus {
+.is-active {
   color: var(--blue);
-  /* Додаємо це, щоб прибрати стандартну рамку фокусу (outline) браузера,
-     оскільки у нас вже є свій індикатор фокусу (лінія знизу) */
-  outline: none;
 }
 
-.nav__link:focus::after {
+.is-active::after {
   content: "";
   position: absolute;
   bottom: 0;
