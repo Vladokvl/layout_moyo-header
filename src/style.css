@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-  --blue: #00b7f4;
+  --blue: #00acdc;
 }
 
 .header {
@@ -32,12 +32,13 @@ body {
 }
 
 .nav__item + .nav__item {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .nav__link {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 60px;
   font-size: 12px;
   font-weight: 500;
@@ -51,12 +52,16 @@ body {
   color: var(--blue);
 }
 
+.is-blue {
+  color: var(--blue);
+}
+
 .is-active {
   color: var(--blue);
 }
 
 .is-active::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
