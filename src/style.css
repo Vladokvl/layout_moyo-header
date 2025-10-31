@@ -15,8 +15,6 @@ body {
   justify-content: space-between;
   padding: 0 50px;
   background: #fff;
-  /* Додаємо це правило, щоб padding враховувався
-     у загальну ширину елемента */
   box-sizing: border-box;
 }
 
@@ -26,12 +24,7 @@ body {
   display: block;
 }
 
-.nav {
-  /* height: 100%; - це правило не потрібне */
-}
-
 .nav__list {
-  /* height: 100%; - і це також */
   display: flex;
   list-style: none;
   margin: 0;
@@ -45,7 +38,6 @@ body {
 .nav__link {
   display: flex;
   align-items: center;
-  /* Висота посилань задає висоту всього хедера */
   height: 60px;
   font-size: 12px;
   font-weight: 500;
